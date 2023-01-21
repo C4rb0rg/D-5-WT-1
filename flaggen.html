@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js"></script>
+    
+</head>
+
+<body>
+<div class="header">
+<h1>Flag generator</h1></div>
+<div class="body2"><p2> Click anywhere on the gray screen to generate a custom horizontally-oriented flag.</p2>
+</div>
+
+    <script>
+
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+    function setup() {
+    createCanvas(w, h);
+    noStroke();
+    background(220);
+    
+    }
+
+  
+  function mousePressed(){
+     fill (random(255), random(255), random (255))
+     rect (450,140,700,150)
+     fill (random(255), random(255), random (255))
+     rect (450,140+150,700,150)
+     fill (random(255), random(255), random (255))
+     rect (450,140+300,700,150)
+    }
+    
+    
+    </script>
+
+<style>
+.header {font-family: Arial, Helvetica, sans-serif;
+         font-size: 24px;
+         background(220);
+         margin: center;
+        }
+
+.body {font-family: Arial, Helvetica, sans-serif;
+         font-size: 14px;
+         background(220);
+         margin: center;
+         }
+</style>
+
+</body>
+</html>
